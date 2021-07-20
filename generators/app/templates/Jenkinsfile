@@ -1,0 +1,13 @@
+@Library('apulis-build@master') _
+
+buildPlugin ( {
+    repoName = "AIStudio"
+    project = ["AIStudio"]
+    dockerImages = [
+        [
+            "directory": ".",
+            "imageName": "apulistech/AIStudio",
+            "arch": ["amd64", "arm64"]
+        ]
+    ]
+})

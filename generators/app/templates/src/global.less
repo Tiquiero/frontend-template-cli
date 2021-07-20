@@ -1,0 +1,96 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+  min-width: 1024px;
+  .ant-pro-sider-menu-logo, .ant-layout-sider, .ant-menu, .ant-menu-submenu-title {
+    background: #2A2F37 !important;
+  }
+  .ant-menu ul {
+    background: #1F2329 !important;
+  }
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+tr.ant-table-expanded-row .ant-descriptions-view table {
+  width: 100%;
+}
+.ant-descriptions-bordered .ant-descriptions-view > table {
+  table-layout: fixed !important;
+}
+
+.disabled {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.textEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a, a:hover {
+  color: rgb(24, 144, 255);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 30px;
+}

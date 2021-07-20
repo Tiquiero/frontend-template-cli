@@ -1,0 +1,18 @@
+{
+  "name": "generator-apulis-frontend-cli",
+  "version": "0.2.2",
+  "description": "generator-apulis-frontend-cli",
+  "main": "generators/app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "scaffolding"
+  ],
+  "author": "apulis",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^3.2.0"
+  }
+}
